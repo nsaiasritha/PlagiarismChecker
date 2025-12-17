@@ -61,11 +61,11 @@ public class PlagiarismCheckerCLI {
             double[][] matrix =
                     pipeline.computeSimilarityMatrix(docs);
 
-            // PRINT
+           
             System.out.println("\n===== Similarity Matrix =====");
             printMatrix(docs, matrix);
 
-            // SAVE TO FILE
+            
             saveMatrixToFile(docs, matrix);
 
         } catch (Exception e) {
